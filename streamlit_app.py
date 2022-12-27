@@ -42,5 +42,5 @@ data_rows = cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(data_rows)
 
-add_fruit = streamlit.text_input("What fruit do you want to add to the list?")
+add_fruit = streamlit.text_input("What fruit do you want to add to the list?", 'jackfruit')
 streamlit.write(f"Thanks for adding {add_fruit}")
